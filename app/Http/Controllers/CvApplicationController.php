@@ -39,6 +39,6 @@ class CvApplicationController extends Controller
         ]);
 
         // 4. RESPUESTA al usuario
-        return redirect()->route('cv.create')->with('success', '¡Gracias! Tu hoja de vida ha sido enviada con éxito.');
+        return redirect()->route('landing')->with('success', '¡Gracias! Tu hoja de vida ha sido enviada con éxito.');
     }
 }

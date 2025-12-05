@@ -1,73 +1,79 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'TE APOYAMOS SAS')</title>
-
-
-    <!-- CDN de Bootstrap CSS -->
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    
-
-    @vite('resources/css/app.css')
-
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body>
 
-    <header class="header">
+<body class="bg-gray-100 text-gray-800">
 
-        <div class="nav-container">
 
-            <div class="logo-container">
-                <div class="logo-img">
-                    <img src="{{asset('img/logo_titulo.png')}}" alt="logo">
-                </div>
+
+    <!-- NAVBAR -->
+    <nav class="bg-white shadow-lg fixed w-full z-10 top-0 text-lg border-b-2 border-emerald-500">
+        <div class="max-w-7xl mx-auto flex items-center justify-between py-4 px-6">
+
+            <!-- LOGO -->
+            <div class="flex items-center">
+                <img src="{{ asset('img/logo_titulo.png') }}" alt="Logo" class="h-16 w-auto">
             </div>
-            
-            <div class="nav-links">
-                <a href="{{ route('home') }}">Inicio</a>
-                <a href="{{ route('about') }}">Nosotros</a>
-                <a href="{{ route('services') }}">Servicios</a>
-                <a href="#">Noticias</a>
-                <a href="{{ route('cv.create') }}">Postúlate</a>
-                <a href="#">Contacto</a>
+
+            <!-- LINKS CENTRALES -->
+            <div class="hidden md:flex space-x-8 text-gray-700 font-medium">
+                <a href="#inicio" class="hover:text-blue-900 transition">Inicio</a>
+                <a href="#nosotros" class="hover:text-blue-900 transition">Nosotros</a>
+                <a href="#servicios" class="hover:text-blue-900 transition">Servicios</a>
+                <a href="#postulate" class="hover:text-blue-900 transition">Postúlate</a>
+                <a href="#contacto" class="hover:text-blue-900 transition">Contacto</a>
             </div>
-            <div class="nav-buttons">
-                <a href="#" class="btn-blue">Iniciar sesión</a>
-                <a href="#" class="btn-blue">Registrarse</a>
+
+            <!-- BOTONES -->
+            <div class="hidden md:flex space-x-4">
+                <a href="#"
+                    class="px-4 py-2 bg-blue-900 text-white rounded-lg shadow hover:bg-blue-700 transition">
+                    Iniciar sesión
+                </a>
+                <a href="#"
+                    class="px-4 py-2 bg-blue-900 text-white rounded-lg shadow hover:bg-blue-700 transition">
+                    Registrarse
+                </a>
             </div>
+
+
 
         </div>
 
-    </header>
+        
+    </nav>
 
-    <div class="line"></div>
-
-    <main class="content-container">
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="max-w-7xl mx-auto py-10 px-6">
         @yield('content')
     </main>
 
-    <footer class="footer">
-        <div class="footer-container">
-            <div>
-                <span>Dirección</span> |
+    <!-- FOOTER -->
+    <footer class="bg-blue-900 text-gray-300 py-8 mt-12">
+        <div class="max-w-7xl mx-auto text-center space-y-3">
+
+            <div class="text-sm">
+                <span class="font-semibold">Dirección</span> |
                 <span>Teléfono</span> |
                 <span>Correo</span>
             </div>
-            <div>
+
+            <div class="text-sm">
                 © Todos los derechos reservados
             </div>
-            <div class="footer-links">
-                <a href="#">Políticas de privacidad</a> |
-                <a href="#">Términos de uso</a>
+
+            <div class="text-sm space-x-2">
+                <a href="#" class="hover:text-white">Políticas de privacidad</a> |
+                <a href="#" class="hover:text-white">Términos de uso</a>
             </div>
+
         </div>
     </footer>
-
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 </body>
 </html>
