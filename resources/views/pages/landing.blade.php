@@ -5,10 +5,9 @@
     <!-- Contenedor Principal de la Landing Page -->
     <div class="landing-page">
 
-        <!-- ============================================== -->
+    
         <!-- SECCIÓN 1: INICIO / HERO (ID: inicio) -->
-        <!-- Basado en la imagen 1.jpg -->
-        <!-- ============================================== -->
+
         <section id="inicio" class="py-20 md:py-32 bg-gray-50">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -40,8 +39,8 @@
 
         <!-- ============================================== -->
         <!-- SECCIÓN 2: NOSOTROS (ID: nosotros) -->
-        <!-- Basado en la imagen 3.jpg -->
         <!-- ============================================== -->
+
         <section id="nosotros" class="py-20 md:py-32 bg-white">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -77,8 +76,9 @@
 
         <!-- ============================================== -->
         <!-- SECCIÓN 3: SERVICIOS (ID: servicios) -->
-        <!-- Basado en la imagen 2.png -->
         <!-- ============================================== -->
+
+    
         <section id="servicios" class="py-20 md:py-32 bg-gray-100">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
                 <h2 class="text-4xl font-bold text-primary-dark mb-12">Nuestros servicios</h2>
@@ -122,8 +122,9 @@
         
 
         <!-- ============================================== -->
-        <!-- SECCIÓN 5: POSTÚLATE (ID: postulate) - ACTUALIZADA -->
+        <!-- SECCIÓN 5: POSTÚLATE (ID: postulate)
         <!-- ============================================== -->
+
         <section id="postulate" class="py-20 md:py-32 bg-gray-50">
             <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
                 
@@ -210,8 +211,9 @@
 
         <!-- ============================================== -->
         <!-- SECCIÓN 6: CONTACTO (ID: contacto) -->
-        <!-- Basado en la imagen 5.png (Formulario de Contacto) -->
         <!-- ============================================== -->
+
+    
         <section id="contacto" class="py-20 md:py-32 bg-white">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
